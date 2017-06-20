@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!--<link rel="import" type="text/html" href="assets/templates/sample-mustache.html">
+     <link rel="import" href="assets/templates/sample-handlebars.html">
+     <link rel="import" href="assets/templates/sample-jquery-tpl.html">
+     <link rel="import" href="assets/templates/sample-template.html">-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="target-mustache" class="template-block"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="target-handlebars" class="template-block"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="target-jquery-tpl" class="template-block"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="target-template" class="template-block"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="target-append" class="template-block"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script id="sample-mustache.html" type="x-tmpl-mustache">
+        <p>Use the <strong>{{power}}</strong>, {{name}}!</p>
+    </script>
+
+    <script id="sample-handlebars.html" type="text/x-handlebars-template">
+        <p>Use the <strong>{{power}}</strong>, {{name}}!</p>
+    </script>
+
+    <script id="sample-jquery-tpl" type="text/html">
+        <p>Use the <strong data-content="power"></strong>, <span data-content="name"></span>!</p>
+    </script>
+
+    <template id="sample-template">
+        <p>Use the <strong>{{power}}</strong>, {{name}}!</p>
+    </template>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/mustache.js/mustache.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.min.js"></script>
+    <script src="bower_components/jquery-load-template/dist/jquery.loadTemplate.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
